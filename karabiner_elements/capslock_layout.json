@@ -8,7 +8,7 @@
           "type": "basic",
           "from": {
             "key_code": "caps_lock",
-	    "modifiers": { "optional": ["any"] }
+            "modifiers": { "optional": ["any"] }
           },
           "to": [
             {
@@ -29,7 +29,7 @@
         },
         {
           "type": "basic",
-	  "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
+          "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
           "from": {
             "key_code": "j",
             "modifiers": { "optional": ["any"] }
@@ -42,7 +42,7 @@
         },
         {
           "type": "basic",
-	  "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
+          "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
           "from": {
             "key_code": "k",
             "modifiers": { "optional": ["any"] }
@@ -55,10 +55,10 @@
         },
         {
           "type": "basic",
-	  "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
+          "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
           "from": {
             "key_code": "h",
-	    "modifiers": { "optional": ["any"] }
+            "modifiers": { "optional": ["any"] }
           },
           "to": [
             {
@@ -68,24 +68,24 @@
         },
         {
           "type": "basic",
-	  "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
+          "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
           "from": {
             "key_code": "l",
-	    "modifiers": { "optional": ["any"] }
+            "modifiers": { "optional": ["any"] }
           },
           "to": [
             {
               "key_code": "right_arrow"
             }
           ],
-	  "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }]
+          "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }]
         },
         {
           "type": "basic",
-	  "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
+          "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
           "from": {
             "key_code": "4",
-	    "modifiers": { "optional": ["any"] }
+            "modifiers": { "optional": ["any"] }
           },
           "to": [
             {
@@ -95,10 +95,10 @@
         },
         {
           "type": "basic",
-	  "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
+          "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
           "from": {
             "key_code": "0",
-	    "modifiers": { "optional": ["any"] }
+            "modifiers": { "optional": ["any"] }
           },
           "to": [
             {
@@ -108,29 +108,42 @@
         },
         {
           "type": "basic",
-	  "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
+          "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
           "from": {
             "key_code": "w",
-	    "modifiers": { "optional": ["any"] }
+            "modifiers": { "optional": ["any"] }
           },
           "to": [
             {
               "key_code": "right_arrow",
-	      "modifiers": ["left_option"]
+              "modifiers": ["left_option"]
             }
           ]
         },
         {
           "type": "basic",
-	  "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
+          "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
           "from": {
             "key_code": "b",
-	    "modifiers": { "optional": ["any"] }
+            "modifiers": { "optional": ["any"] }
           },
           "to": [
             {
               "key_code": "left_arrow",
-	      "modifiers": ["left_option"]
+              "modifiers": ["left_option"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [{ "type": "variable_if", "name": "caps_lock pressed", "value": 1 }],
+          "from": {
+            "key_code": "delete_or_backspace",
+            "modifiers": { "optional": ["any"] }
+          },
+          "to": [
+            {
+              "key_code": "delete_forward"
             }
           ]
         }
